@@ -3,6 +3,8 @@ import { connect } from 'react-redux'
 import { StatusBar } from 'react-native'
 
 import Container from '~common/ui/Container'
+import Box from '~common/ui/Box'
+import Text from '~common/ui/Text'
 import BibleViewer from './BibleViewer'
 import BibleHeader from './BibleHeader'
 import BibleParamsModal from './BibleParamsModal'
@@ -64,6 +66,11 @@ class BibleScreen extends React.Component {
           version={app.version}
           onBibleParamsClick={this.toggleBibleParamsOpen}
         />
+        <Box backgroundColor="red" padding={10} backgroundColor="red">
+          <Text style={{ color: 'white', textAlign: 'center', fontWeight: 'bold', fontSize: 20 }}>
+            {'Cette version est obsolète ! \n Téléchargez la mise à jour.'}
+          </Text>
+        </Box>
         <BibleViewer
           isReadOnly={isReadOnly}
           isSelectionMode={isSelectionMode}

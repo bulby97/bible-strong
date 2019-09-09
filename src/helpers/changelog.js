@@ -7,6 +7,13 @@ export const logTypes = {
 
 export default [
   {
+    date: '1568002918895',
+    type: logTypes.INFO,
+    title: 'Cette version est obsolète !',
+    description:
+      "Vous êtes sur l'ancienne version de l'app. Si vous souhaitez accéder à toutes les nouveautés, merci de mettre à jour l'application sur le play/apple store."
+  },
+  {
     date: '1566639586810',
     type: logTypes.BUG,
     title: "Chargement de l'index...",
